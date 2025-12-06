@@ -65,6 +65,29 @@ const Hero: React.FC = () => {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-gray-500">
         <ArrowDown size={24} />
       </div>
+
+      {/* Animated Character Peeking from Right */}
+      <div className="fixed right-0 bottom-0 z-40 flex flex-col items-end pointer-events-none">
+        {/* Speech Bubble */}
+        <div 
+          className="mr-[30%] mb-4 bg-white text-black px-5 py-3 rounded-2xl rounded-br-none font-medium shadow-lg opacity-0 animate-pop-in-out relative text-lg transform -translate-x-1/2"
+          style={{ animationDelay: '0.5s' }}
+        >
+          Hi to everyone! 👋
+          <div className="absolute bottom-0 -right-2 w-4 h-4 bg-white transform skew-x-[20deg]"></div>
+        </div>
+        
+        {/* 3D Character */}
+        <div className="h-[50vh] min-h-[400px] md:h-[60vh] animate-peek-in-out transform translate-x-full origin-bottom">
+           <div className="h-full animate-float">
+            <img 
+              src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man%20Raising%20Hand.png" 
+              alt="Saying Hi" 
+              className="h-full w-auto object-contain drop-shadow-2xl"
+            />
+           </div>
+        </div>
+      </div>
     </section>
   );
 };

@@ -8,9 +8,14 @@ import {
   Github,
   Linkedin,
   Mail,
-  Instagram
+  Instagram,
+  Image,
+  Bot,
+  Triangle,
+  Terminal,
+  Figma
 } from 'lucide-react';
-import { Service, Project, Experience, SkillItem, SocialLink, Companion } from './types';
+import { Service, Project, Experience, SkillItem, SocialLink, Companion, ApplicationTool } from './types';
 
 export const SOCIAL_LINKS: SocialLink[] = [
   { name: 'Email', url: 'mailto:prempolai1986@gmail.com', icon: Mail, display: 'prempolai1986@gmail.com' },
@@ -102,7 +107,7 @@ export const PROJECTS_DATA: Project[] = [
     title: 'Kismat.AI',
     category: 'Full Stack & AI',
     description: 'A cutting-edge project demonstrating the integration of artificial intelligence with intuitive user interface design. This platform leverages advanced algorithms to provide predictive insights.',
-    imageUrl: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop',
     tags: ['React', 'Python', 'AI/ML', 'Tailwind']
   },
   {
@@ -124,6 +129,17 @@ export const COMPANIONS_DATA: Companion[] = [
     linkedinUrl: 'https://www.linkedin.com/in/raghab-barik-b44692337/',
     portfolioUrl: 'https://raghab-portfolio2.vercel.app/'
   }
+];
+
+export const APPLICATIONS_DATA: ApplicationTool[] = [
+  { id: 'vscode', name: 'VS Code', category: 'Development', icon: Code2 },
+  { id: 'figma', name: 'Figma', category: 'UI/UX Design', icon: PenTool },
+  { id: 'premiere', name: 'Premiere Pro', category: 'Video Editing', icon: Video },
+  { id: 'photoshop', name: 'Photoshop', category: 'Graphic Design', icon: Image },
+  { id: 'github', name: 'GitHub', category: 'Version Control', icon: Github },
+  { id: 'vercel', name: 'Vercel', category: 'Deployment', icon: Triangle },
+  { id: 'postman', name: 'Postman', category: 'API Testing', icon: Terminal },
+  { id: 'chatgpt', name: 'AI Tools', category: 'Productivity', icon: Bot },
 ];
 
 export const EMAILJS_CONFIG = {

@@ -47,3 +47,10 @@ export interface Companion {
   linkedinUrl?: string;
   portfolioUrl?: string;
 }
+
+export interface ApplicationTool {
+  id: string;
+  name: string;
+  category: string;
+  icon: LucideIcon;
+}
