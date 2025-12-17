@@ -103,11 +103,19 @@ export const SERVICES_DATA: Service[] = [
 
 export const PROJECTS_DATA: Project[] = [
   {
+    id: 'pixel-perfect',
+    title: 'Pixel Perfect',
+    category: 'Graphics Design Platform',
+    description: 'A user-friendly graphics designing platform crafted for simplicity and power. It empowers creators to build professional visual content with an intuitive interface and advanced editing capabilities.',
+    imageUrl: 'https://i.postimg.cc/wTFqJ9gT/Screenshot-2025-12-17-231006.png',
+    tags: ['React', 'Fabric.js', 'UI/UX', 'Cloud Storage']
+  },
+  {
     id: 'kismat',
     title: 'Kismat.AI',
     category: 'Full Stack & AI',
     description: 'A cutting-edge project demonstrating the integration of artificial intelligence with intuitive user interface design. This platform leverages advanced algorithms to provide predictive insights.',
-    imageUrl: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2062&auto=format&fit=crop',
     tags: ['React', 'Python', 'AI/ML', 'Tailwind']
   },
   {
